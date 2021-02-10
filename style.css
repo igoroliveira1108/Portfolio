@@ -9,6 +9,14 @@
     text-decoration: none;
 }
 
+a {
+    color: white;
+}
+
+#linkedin{
+    color: black;
+}
+
 header {
     width: 100%;
     height: 100vh;
@@ -42,8 +50,8 @@ header {
 .line {
     width: 100%;
     height: .1rem;
-    background-color: white;
-    box-shadow: 0.1rem 0.1rem 1px #000;
+    background-color: black;
+    box-shadow: 0.1rem 0.1rem 1px white;
     transform: transform 1s;
 }
 
@@ -143,11 +151,12 @@ header {
 .sidebar {
     width: 20rem;
     height: 100vh;
-    background-color: white;
     position: fixed;
     top: 0;
     right: -20rem;
     transition: all 1s;
+    background-color: #fcfcfc;
+    border-left: 1px solid rgb(231, 231, 231);
 }
 
 .show-menu .sidebar {
@@ -169,7 +178,7 @@ header {
 .menu-link {
     font-family: var(--font-action);
     font-size: 2rem;
-    color: #555;
+    color: black;
 }
 
 .menu-link:hover {
@@ -199,4 +208,155 @@ header {
 .social-media i:hover {
     background-color: #a044ff;
 }
+
+.sessao-conhecimentos {
+    border-bottom: 1px solid rgb(235, 234, 234);
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header h3 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    border-bottom: .1rem solid #6a3093;
+    padding-top: 2rem;
+}
+
+.conhecimentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 700px){
+    .conhecimentos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.text-html, .text-css, .text-js, .text-ingles, .text-wordpress, .text-git{
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    opacity: 0;
+}
+
+
+.conhecimento  {
+    padding: 2rem;
+}
+
+.conhecimento i {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.title {
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sessao-projetos {
+    border-bottom: 1px solid rgb(235, 234, 234);
+}
+
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+@media only screen and (max-width: 700px){
+    .projetos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-info {
+    padding: 1rem;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+}
+
+.card-info h3{
+    margin-top: 10px;
+    text-align: center;
+    font-family: var(--font-action);
+}
+
+.card-info h4 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+.card-info p {
+    margin-top: 10px;
+    text-align: center;
+    text-align: justify;
+    font-family: var(--font-secundary);
+    font-weight: 600;
+}
+
+.card-info button {
+    margin-top: 10px;
+    background-color: #6a3093;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.card-info button:hover {
+    background-color: #a044ff;
+}
+
+.info-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+}
+
+@media only screen and (max-width: 700px){
+    .info-contato {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.informacoes {
+    margin-top: 30px;
+}
+
+.informacoes p {
+    font-family: var(--font-secundary);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#linkedin:hover {
+    color: blue;
+}
+
+#numero, #email {
+    padding-bottom: 15px;
+}
+
 
