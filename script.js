@@ -7,6 +7,7 @@ hamburguer.addEventListener('click', () => {
 
 /* Eventos na sessão conhecimentos */
 // Variáveis Globais
+
 var html = document.querySelector(".html")
 var textHtml = document.querySelector(".text-html");
 
@@ -58,6 +59,7 @@ function showHoverJS () {
 
 function hideHoverJS () {
     textJs.style.opacity = '0'
+    
 }
 
 ingles.addEventListener('mouseover', showHoverEN);
@@ -74,6 +76,7 @@ wordpress.addEventListener('mouseover', showHoverWP);
 wordpress.addEventListener('mouseout', hideHoverWP);
 function showHoverWP () {
     textWP.style.opacity = '1'
+
 }
 
 function hideHoverWP () {
@@ -84,6 +87,7 @@ git.addEventListener('mouseover', showHoverGIT);
 git.addEventListener('mouseout', hideHoverGIT);
 function showHoverGIT () {
     textGit.style.opacity = '1'
+    
 }
 
 function hideHoverGIT () {
