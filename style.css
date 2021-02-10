@@ -238,16 +238,30 @@ header {
     }
 }
 
-.text-html, .text-css, .text-js, .text-ingles, .text-wordpress, .text-git{
-    border: 1px solid red;
-    background-color: red;
-    color: white;
-    opacity: 0;
-}
+.text-html, .text-css, .text-js, .text-ingles, .text-wordpress, 
+.text-git{
+       border: 1px solid #6a3093;
+       background-color: #6a3093;
+       color: white;
+       border-radius: 10px;
+       padding: 10px;
+       opacity: 0;
+    }
 
+@media (pointer: coarse){
+.text-html, .text-css, .text-js, .text-ingles, .text-wordpress, 
+.text-git{
+    display: none;
+}
+}
 
 .conhecimento  {
     padding: 2rem;
+}
+
+.fa-caret-up {
+    color: #6a3093;
+    opacity: 0;
 }
 
 .conhecimento i {
