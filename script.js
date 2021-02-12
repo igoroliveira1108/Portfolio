@@ -1,12 +1,5 @@
-var hamburguer = document.querySelector(".hamburguer");
-
-hamburguer.addEventListener('click', () => {
-    document.querySelector('.container').classList.toggle("show-menu");
-})
-
-
-/* Eventos na sessão conhecimentos */
-// Variáveis Globais
+/* Eventos na sessÃ£o conhecimentos */
+// VariÃ¡veis Globais
 
 var html = document.querySelector(".html")
 var textHtml = document.querySelector(".text-html");
@@ -26,7 +19,7 @@ var textWP = document.querySelector('.text-wordpress');
 var git = document.querySelector(".git");
 var textGit = document.querySelector('.text-git')
 
-//Funções
+//FunÃ§Ãµes
 
 // HTML
 html.addEventListener('mouseover', showHoverHTML);
@@ -93,7 +86,6 @@ function showHoverGIT () {
 function hideHoverGIT () {
     textGit.style.opacity = '0'
 }
-
 
 
 
