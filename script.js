@@ -1,9 +1,11 @@
-var hamburguer = document.querySelector(".hamburguer");
+const toogleButtons = document.querySelectorAll(".faq-toggle");
+toogleButtons.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active')
+    })
+});
 
-hamburguer.addEventListener('click', () => {
-    document.querySelector('.container').classList.toggle("show-menu");
-})
-
+var container =  document.querySelector('.container')
 
 /* Eventos na sessão conhecimentos */
 // Variáveis Globais
@@ -20,11 +22,11 @@ var textJs = document.querySelector(".text-js");
 var ingles = document.querySelector('.ingles');
 var textIngles = document.querySelector('.text-ingles');
 
-var wordpress = document.querySelector(".wordpress");
-var textWP = document.querySelector('.text-wordpress');
-
 var git = document.querySelector(".git");
 var textGit = document.querySelector('.text-git')
+
+var salesforce = document.querySelector('.salesforce')
+var textSalesforce = document.querySelector('.text-salesforce')
 
 //Funções
 
@@ -72,17 +74,6 @@ function hideHoverEN () {
     textIngles.style.opacity = '0'
 }
 
-wordpress.addEventListener('mouseover', showHoverWP);
-wordpress.addEventListener('mouseout', hideHoverWP);
-function showHoverWP () {
-    textWP.style.opacity = '1'
-
-}
-
-function hideHoverWP () {
-    textWP.style.opacity = '0'
-}
-
 git.addEventListener('mouseover', showHoverGIT);
 git.addEventListener('mouseout', hideHoverGIT);
 function showHoverGIT () {
@@ -93,6 +84,18 @@ function showHoverGIT () {
 function hideHoverGIT () {
     textGit.style.opacity = '0'
 }
+
+salesforce.addEventListener('mouseover', showHoverSalesforce);
+salesforce.addEventListener('mouseout', hideHoverSalesforce);
+function showHoverSalesforce () {
+    textSalesforce.style.opacity = '1'
+    
+}
+
+function hideHoverSalesforce () {
+    textSalesforce.style.opacity = '0'
+}
+
 
 
 

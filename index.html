@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/49a90a9675.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
@@ -16,12 +16,6 @@
 <body>
     <div class="container">
 
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-        </div>
-
         <header>
             <div class="img-wrapper">
                 <img src="imagens/bg.jpg" alt="">
@@ -29,17 +23,16 @@
             <div class="banner">
                 <h1>Desenvolvedor Frontend</h1>
                 <p>Igor Barbosa de Oliveira</p>
-                <button><a href="https://devigoroliveira.com.br/.sessao-conhecimentos"></a>Saiba mais</button>
             </div>
         </header>
 
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                    <li class="menu-item" id="menu-item1"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item" id="menu-item2"><a href="#" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item" id="menu-item3"><a href="#" class="menu-link">Projetos</a></li>
+                    <li class="menu-item" id="menu-item4"><a href="#" class="menu-link">Contato</a></li>
                 </ul>
             </nav>
 
@@ -47,57 +40,54 @@
                 <a href="https://github.com/igoroliveira1108" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </aside>
+        <div class="sessao-conhecimentos" id="conhecimentos">
+        <div class="header">
+            <h3>Conhecimentos</h3>
+        </div>
 
-       
+        
+        <div class="conhecimentos">
 
-        <div class="sessao-conhecimentos">
-
-            <div class="header">
-                <h3>Conhecimentos</h3>
+            <div class="conhecimento" >
+                <i class="fab fa-html5 html"></i>
+                <div class="title html">HTML</div>
+                <p class="text-html">Fiz um curso de HTML 5 no site Curso em Vídeo, além de diversas pesquisas no Youtube e StackOverFlow.</p>
             </div>
 
-            <div class="conhecimentos">
+            <div class="conhecimento">
+                <i class="fab fa-css3-alt css"></i>
+                <div class="title css">CSS</div>
+                <p class="text-css">Grid, Flexbox e Media Queries.</p>
+            </div>
 
-                <div class="conhecimento">
-                    <i class="fab fa-html5 html"></i>
-                    <div class="title html">HTML</div>
-                    <p class="text-html">Fiz um curso de HTML 5 no site Curso em Vídeo, além de diversas pesquisas no Youtube e StackOverFlow.</p>
-                </div>
+            <div class="conhecimento">
+                <i class="fab fa-js js"></i>
+                <div class="title js">Javascript</div>
+                <p class="text-js">Javascript puro, jQuery e Framework Lightning Web Components da Salesforce. </p>
+            </div>
 
-                <div class="conhecimento">
-                    <i class="fab fa-css3-alt css"></i>
-                    <div class="title css">CSS</div>
-                    <p class="text-css">Fiz um curso de CSS no site Curso em Vídeo, além de diversas pesquisas no Youtube e StackOverFlow. </p>
-                </div>
+            <div class="conhecimento">
+                <i class="fas fa-language ingles"></i>
+                <div class="title ingles">Inglês Avançado</div>
+                <p class="text-ingles">Plena capacidade de ler, ouvir, escrever e falar inglês.</p>
+            </div>
 
-                <div class="conhecimento">
-                    <i class="fab fa-js js"></i>
-                    <div class="title js">Javascript e jQuery</div>
-                    <p class="text-js">Curso de Javascript no site Curso em Vídeo, no canal Traversy Media e diversas pesquisas no StackOverFlow.</p>
-                </div>
+            <div class="conhecimento">
+                <i class="fab fa-salesforce salesforce"></i>
+                <div class="title salesforce">Salesforce</div>
+                <p class="text-salesforce">Framework Lightning Web Components, Apex e Triggers.</p>
+            </div>
 
-                <div class="conhecimento">
-                    <i class="fas fa-language ingles"></i>
-                    <div class="title ingles">Inglês Fluente</div>
-                    <p class="text-ingles">Curso de Inglês Avançado por 5 anos e 2 anos de obra voluntária com estrangeiros.</p>
-                </div>
-
-                <div class="conhecimento">
-                    <i class="fab fa-wordpress wordpress"></i>
-                    <div class="title wordpress">WordPress</div>
-                    <p class="text-wordpress">Trabalho com WordPress desde 2017 usando o tema Divi e fiz curso de WordPress no Tribunal de Contas do Distrito Federal enquanto trabalhava como estagiário.</p>
-                </div>
-
-                <div class="conhecimento">
-                    <i class="fab fa-github git"></i>
-                    <div class="title git">Git e GitHub</div>
-                    <p class="text-git">Aprendi a mexer com o Git e GitHub com a utilização diária.</p>
-                </div>
-                
+            <div class="conhecimento">
+                <i class="fab fa-github git"></i>
+                <div class="title git">Git</div>
+                <p class="text-git">Aprendi a mexer com o Git com a utilização diária.</p>
             </div>
 
         </div>
 
+    </div>
+        
 
         <section class="sessao-projetos">
             <div class="header">
@@ -132,7 +122,7 @@
 
                     <div class="card-info">
                         <div class="card-img"><a href="https://igoroliveira1108.github.io/verificar-cep/" target="blank"><img src="/imagens/Projetos/Verificar-Cep.png" class="card-img"></div></a> 
-                         <h3>Achar endereço pelo CEP</h3>
+                         <h3>API Via CEP</h3>
                          <h4>jQuery</h4>
                          <p>Projeto pessoal desenvolvido com jQuery. O objetivo deste projeto é achar endereços pelo CEP. Consumi uma API chamada ViaCep usando AJAX. Site responsivo para todos os dispositivos.</p>
                          <button><a href="https://igoroliveira1108.github.io/verificar-cep/" target="blank">Visualizar</a></button>
@@ -153,6 +143,39 @@
                          <p>Projeto pessoal para melhorar meus conhecimentos em HTML e CSS. Fiz uma loja virtual fictícia de artigos esportivos. Site responsivo para todos os dispositivos.</p>
                          <button><a href="https://www.linkedin.com/posts/igor-oliveira-749621190_projeto-pessoal-para-melhorar-meus-conhecimentos-activity-6715311042865483776-otci/" target="blank">Visualizar</a></button>
                      </div>
+
+                     <div class="card-info">
+                        <div class="card-img"><a href="https://igoroliveira1108.github.io/Task-List/" target="blank"><img src="/imagens/Projetos/tasklist.png" class="card-img"></div> </a>
+                         <h3>Lista de Tarefas com Local Storage</h3>
+                         <h4>Javascript, CSS e HTML</h4>
+                         <p>Desenvolvi uma lista de tarefas com jQuery, Javascript puro, HTML e CSS. O objetivo da aplicação é servir como um lembrete de tarefas que precisamos fazer. Podemos adicionar as tarefas, editá-las e exclui-las. Usei o local storage do navegador para salvar as informações.</p>
+                         <button><a href="https://igoroliveira1108.github.io/Task-List/" target="blank">Visualizar</a></button>
+                     </div>
+
+                     <div class="card-info">
+                        <div class="card-img"><a href="https://igoroliveira1108.github.io/Form-Validator/" target="blank"><img src="/imagens/Projetos/login.png" class="card-img"></div> </a>
+                         <h3>Formulário de Login</h3>
+                         <h4>Javascript, CSS e HTML</h4>
+                         <p>Formulário de Login que valida se os campos estão preenchidos, se é um email válido e se as senhas coincidem.</p>
+                         <button><a href="https://igoroliveira1108.github.io/Form-Validator/" target="blank">Visualizar</a></button>
+                     </div>
+
+                     <div class="card-info">
+                        <div class="card-img"><a href="https://igoroliveira1108.github.io/icanhazdadjoke-API/" target="blank"><img src="/imagens/Projetos/apijoke.png" class="card-img"></div> </a>
+                         <h3>API Piada</h3>
+                         <h4>Javascript, CSS e HTML</h4>
+                         <p>Consumi uma API de piada ruins. Usei o fetch do Javascript.</p>
+                         <button><a href="https://igoroliveira1108.github.io/icanhazdadjoke-API/" target="blank">Visualizar</a></button>
+                     </div>
+
+                     <!-- <div class="card-info">
+                        <div class="card-img"><a href="https://igoroliveira1108.github.io/Barra-de-progresso/" target="blank"><img src="/imagens/Projetos/apijoke.png" class="card-img"></div> </a>
+                         <h3>Barra de Progresso</h3>
+                         <h4>Javascript, CSS e HTML</h4>
+                         <p>Barra de Progresso com vários efeitos CSS.</p>
+                         <button><a href="https://igoroliveira1108.github.io/Barra-de-progresso/" target="blank">Visualizar</a></button>
+                     </div> -->
+
                 </div>
             </div>
 
@@ -172,7 +195,7 @@
         </section>
 
         
-        <script src="/script.js"></script>
+        <script src="script.js"></script>
             
       
             
