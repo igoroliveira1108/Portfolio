@@ -215,6 +215,10 @@ header {
     background-color: white;
 }
 
+.experiencias {
+    margin-top: 30px;
+}
+
 .conhecimentos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -226,12 +230,18 @@ header {
     margin-bottom: 2rem;
 }
 
+
 .conhecimento i {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
     font-size: 3rem;
+}
+
+.sessao-experiencias {
+    border-bottom: 1px solid rgb(235, 234, 234);
+    background-color: white;
 }
 
 .header {
@@ -277,11 +287,41 @@ header {
     justify-content: center;
 }
 
+.sessao-experiencias {
+    border-bottom: 1px solid rgb(235, 234, 234);
+    background-color: rgb(225, 224, 224);
+}
+
+.experiencias {
+    border: 1px solid rgb(235, 235, 235);
+    width: 90vw;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.experiencia {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.exp {
+    margin-left: 1rem;
+}
+
+.text-exp {
+    font-size: 12px;
+}
+
 .sessao-projetos {
     border-bottom: 1px solid rgb(235, 234, 234);
     background-color: white;
 }
-
 
 .projetos {
     display: grid;
@@ -300,6 +340,17 @@ header {
     .conhecimentos {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .experiencias {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid rgb(235, 235, 235);
+        width: 80vw;
+        margin-left: 2.5rem;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+        background-color: white;
     }
 }
 
